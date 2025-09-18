@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paste & Play — Video Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Paste & Play</h1>
+    <p>Paste a YouTube, Vimeo, or direct video file link (mp4/webm) and press Enter or "Load".</p>
+
+    <div class="input-row">
+      <input id="urlInput" type="url" placeholder="https://youtu.be/VIDEO_ID or https://example.com/video.mp4" />
+      <button id="loadBtn">Load</button>
+    </div>
+
+    <div id="message" class="message" aria-live="polite"></div>
+
+    <div id="player" class="player">
+      <!-- embed area populated by script -->
+    </div>
+
+    <footer>
+      <small>Made for GitHub Pages — don't paste private or copyrighted links you don't own.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
